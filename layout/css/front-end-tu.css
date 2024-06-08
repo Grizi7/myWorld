@@ -1,0 +1,109 @@
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.btn-check:active+.btn-warning:focus,
+.btn-check:checked+.btn-warning:focus,
+.btn-warning.active:focus,
+.btn-warning:active:focus,
+.show>.btn-warning.dropdown-toggle:focus,
+.btn-check:focus+.btn-warning,
+.btn-warning:focus,
+.btn-check:focus+.btn-primary,
+.btn-primary:focus,
+.btn-check:active+.btn-primary:focus,
+.btn-check:checked+.btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show>.btn-primary.dropdown-toggle:focus,.form-control:focus,.btn-close:focus {
+    box-shadow: none;
+}
+
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: white !important;
+    border-color: white white rgba(0, 17, 51, 0.05) aliceblue !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+}
+
+.btn-warning {
+    background: rgb(236, 28, 36);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(236, 28, 36);
+}
+
+.btn-warning:hover,
+.btn-check:active+.btn-warning,
+.btn-check:checked+.btn-warning,
+.btn-warning.active,
+.btn-warning:active,
+.show>.btn-warning.dropdown-toggle,
+.btn-check:focus+.btn-warning,
+.btn-warning:focus {
+    background: rgb(236, 28, 36);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(236, 28, 36);
+}
+
+.navbar {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.headerContentColor {
+    background-color: #F7F6F6;
+    padding: 15px 0;
+}
+
+.headerContent h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.pad {
+    padding-right: 8rem;
+    padding-left: 8rem;
+}
+
+.form-floating .question {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    color: #0d6efd;
+    border: none;
+cursor:pointer;
+
+}
+
+.trackTransfer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 0px) and (max-width: 700px) {
+    .pad {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+}
