@@ -41,15 +41,15 @@
             <img src="./layout/images/logo.png" alt="Earth" class="earth-image d-none">
             <video src="./layout/videos/HIM.mp4" loop class="d-none"></video>
             <div class="dropdown mt-2">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn btn-secondary dropdown-toggle quality" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Quality
                 </button>
                 <div class="dropdown-menu bg-secondary"  aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item " style="color: #fff;" href="#">144p</a>
-                    <a class="dropdown-item " style="color: #fff;" href="#">240p</a>
-                    <a class="dropdown-item " style="color: #fff;" href="#">480p</a>
-                    <a class="dropdown-item " style="color: #fff;" href="#">720p</a>
-                    <a class="dropdown-item " style="color: #fff;" href="#">1080p</a>
+                    <button class="dropdown-item " style="color: #fff;" href="#">144p</button>
+                    <button class="dropdown-item " style="color: #fff;" href="#">240p</button>
+                    <button class="dropdown-item " style="color: #fff;" href="#">480p</button>
+                    <button class="dropdown-item " style="color: #fff;" href="#">720p</button>
+                    <button class="dropdown-item " style="color: #fff;" href="#">1080p</button>
                 </div>
             </div>
         </div>
@@ -63,7 +63,7 @@
                     var quality = $(this).text();
                     $(this).addClass('active');
                     $(this).siblings().removeClass('active');
-                    $('button').text(quality);
+                    $('.quality').text(quality);
                     if(quality == '1080p') {
                         $('img').addClass('d-none');
                         var video = $('video');
